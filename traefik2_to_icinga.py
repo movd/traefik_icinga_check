@@ -90,7 +90,7 @@ Created by  {os.path.realpath(__file__)} \
 at {datetime.datetime.now()}"
                 assign where (host.address || host.address6) && \
 host.vars.os == "Linux" && host.name != NodeName \
-&& "docker" in host.vars.services
+&& "traefik" in host.vars.services
                 }}
                 ''')
 
